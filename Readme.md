@@ -4,9 +4,9 @@ Summary will go here.
 
 ## Authors
 
-Dillon Easter
-Wendy Parsons
-Craig Fell
+* Dillon Easter
+* Wendy Parsons
+* Craig Fell
 
 Students at [Galvanize](https://galvanize.com)
 
