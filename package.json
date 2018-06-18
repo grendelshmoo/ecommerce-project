@@ -1,0 +1,28 @@
+{
+  "name": "ecommerce-project",
+  "version": "1.0.0",
+  "description": "Q2 Galvanize ecommerce collaborative coding project.",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify scripts/main.js -o bundle.js",
+    "watch": "watchify scripts/main.js -o bundle.js",
+    "dev-server": "live-server .",
+    "dev": "run-all \"npm run dev-server\" \"npm run watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grendelshmoo/ecommerce-project.git"
+  },
+  "author": "Dillon Easter, Wendy Parsons, Craig Fell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grendelshmoo/ecommerce-project/issues"
+  },
+  "homepage": "https://github.com/grendelshmoo/ecommerce-project#readme",
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "live-server": "^1.2.0",
+    "run-all": "^1.0.1",
+    "watchify": "^3.11.0"
+  }
+}
