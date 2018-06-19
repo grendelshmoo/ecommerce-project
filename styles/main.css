@@ -27,3 +27,8 @@
 #carouselSlide .carousel-item {
   height: 400px
 }
+
+.signup {
+  padding: 75px 0px;
+  background: wheat;
+}
