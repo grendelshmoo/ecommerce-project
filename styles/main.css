@@ -1,10 +1,13 @@
 /* Additional CSS styles  */
-
+.productImg img {
+  width: 100%;
+  height:
+}
 
 .cartLink {
   background-color: #1eaedb;
-  top: -20px;
-  bottom: 0px;
+  top: -34px;
+  bottom: -34px;
   padding: 5px;
   position: relative;
   display: block;
