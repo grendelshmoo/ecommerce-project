@@ -1,4 +1,5 @@
 /* Additional CSS styles  */
+
 .productImg img {
   width: 100%;
   height:
@@ -21,4 +22,8 @@
 
 .visable {
   opacity: 1;
+}
+
+#carouselSlide .carousel-item {
+  height: 400px
 }
