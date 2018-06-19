@@ -1,4 +1,29 @@
 /* Additional CSS styles  */
+
+.productImg img {
+  width: 100%;
+  height:
+}
+
+.cartLink {
+  background-color: #1eaedb;
+  top: -34px;
+  bottom: -34px;
+  padding: 5px;
+  position: relative;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.cartLink:hover {
+  background-color: #188baf;
+}
+
+.visable {
+  opacity: 1;
+}
+
 #carouselSlide .carousel-item {
   height: 400px
 }
