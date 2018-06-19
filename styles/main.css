@@ -1,1 +1,21 @@
 /* Additional CSS styles  */
+
+
+.cartLink {
+  background-color: #1eaedb;
+  top: -20px;
+  bottom: 0px;
+  padding: 5px;
+  position: relative;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.cartLink:hover {
+  background-color: #188baf;
+}
+
+.visable {
+  opacity: 1;
+}
