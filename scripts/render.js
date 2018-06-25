@@ -65,6 +65,29 @@ const renderPage = function (page) {
     `
     renderProducts(accessProducts("featureProducts"))
   }
+  if (page === "products") {
+    pageContents.innerHTML =
+    `<div class="container">
+      <div class="row">
+        <div class="col text-center py-3">
+          <h2>Products</h2>
+        </div>
+      </div>
+      <div class="row filter-menu">
+        <div class="col-3">
+          <h4>Search by Category</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="products col-3 d-flex flex-row flex-wrap">
+
+        </div>
+      </div>
+
+    </div>`
+
+    renderProducts(accessProducts("productDataFull"))
+  }
 }
 
 module.exports = renderPage

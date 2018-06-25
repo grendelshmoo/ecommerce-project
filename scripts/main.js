@@ -4,6 +4,6 @@
 const addScrollOver = require("./scroll-over")
 const renderPage = require("./render")
 
-renderPage("home")
+renderPage("products")
 
 addScrollOver()
