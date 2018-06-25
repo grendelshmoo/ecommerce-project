@@ -2,9 +2,8 @@
 // const templates = require('./templates')`
 // const data = require('./data')
 const addScrollOver = require("./scroll-over")
-const accessProducts = require("./data")
-const render = require("./render")
+const renderPage = require("./render")
 
-render(accessProducts("featureProducts"))
+renderPage("home")
 
 addScrollOver()
