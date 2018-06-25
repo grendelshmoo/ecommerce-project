@@ -6,7 +6,7 @@
 }
 
 .cartLink {
-  background-color: #1eaedb;
+  background-color: #ef7479;
   top: -34px;
   bottom: -34px;
   padding: 5px;
@@ -17,11 +17,15 @@
 }
 
 .cartLink:hover {
-  background-color: #188baf;
+  background-color: #c35c60;
 }
 
 .visable {
   opacity: 1;
+}
+
+span strong {
+  padding-left: 12px
 }
 
 #carouselSlide .carousel-item {
