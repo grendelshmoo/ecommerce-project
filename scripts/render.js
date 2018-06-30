@@ -73,17 +73,33 @@ const renderPage = function (page) {
           <h2>Products</h2>
         </div>
       </div>
-      <div class="row filter-menu">
-        <div class="col-3">
-          <h4>Search by Category</h4>
-        </div>
-      </div>
       <div class="row">
-        <div class="products col-3 d-flex flex-row flex-wrap">
+        <div class="col-3 d-flex flex-column">
+          <h4>Search by Category</h4>
+          <hr>
+          
+          <h6>Pet</h6>
+          <a class="filter" href="#">Dogs</a>
+          <a class="filter" href="#">Cats</a>
+          <a class="filter" href="#">Birds</a>
+          <a class="filter" href="#">Lizards</a>
+          <br>
+          <h6>Type</h6>
+          <a class="filter" href="#">Food</a>
+          <a class="filter" href="#">Toy</a>
+          <a class="filter" href="#">Habitat</a>
+          <br>
+          <h6>Price</h6>
+          <a class="filter" href="#">Sale</a>
+          <a class="filter" href="#">Under $10</a>
+          <a class="filter" href="#">Under $20</a>
+          <a class="filter" href="#">Under $50</a>
+          <a class="filter" href="#">Under $100</a>
+        </div>
+        <div class="products col-9 d-flex flex-row flex-wrap">
 
         </div>
       </div>
-
     </div>`
 
     renderProducts(accessProducts("productDataFull"))
