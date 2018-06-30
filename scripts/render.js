@@ -1,5 +1,7 @@
 const ejs = require('ejs')
 const accessProducts = require("./data")
+const addScrollOver = require("./scroll-over")
+const addNavLinks = require('./links')
 
 const renderProducts = function (productData) {
   productData.forEach( element => {
@@ -26,7 +28,7 @@ const renderProducts = function (productData) {
 
 const renderPage = function (page) {
   const pageContents = document.querySelector(".page-contents")
-  if (page === "home") {
+  if (page === "PetsMall.com" || page === "Home") {
     pageContents.innerHTML =
     `<div id="carouselSlide" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -63,9 +65,11 @@ const renderPage = function (page) {
 
     </div>
     `
+    addNavLinks()
     renderProducts(accessProducts("featureProducts"))
+    addScrollOver()
   }
-  if (page === "products") {
+  if (page === "Dogs" || page === "Cats" || page === "Birds" || page === "Lizards" || page === "All Products" || page === "Sale Items") {
     pageContents.innerHTML =
     `<div class="container">
       <div class="row">
@@ -77,7 +81,7 @@ const renderPage = function (page) {
         <div class="col-3 d-flex flex-column">
           <h4>Search by Category</h4>
           <hr>
-          
+
           <h6>Pet</h6>
           <a class="filter" href="#">Dogs</a>
           <a class="filter" href="#">Cats</a>
@@ -101,8 +105,9 @@ const renderPage = function (page) {
         </div>
       </div>
     </div>`
-
+    addNavLinks()
     renderProducts(accessProducts("productDataFull"))
+    addScrollOver()
   }
 }
 
