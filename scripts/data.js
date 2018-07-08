@@ -5,8 +5,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Cat Food",
       price: 8.00,
-      petType: "cat",
-      prodType: "food",
+      petType: "Cats",
+      prodType: "Food",
       sale: true,
       prodDescription: "Food for your cat!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -14,8 +14,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Dog Food",
       price: 18.00,
-      petType: "dog",
-      prodType: "food",
+      petType: "Dogs",
+      prodType: "Food",
       sale: false,
       prodDescription: "Food for your dog!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -23,8 +23,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Bird Food",
       price: 5.00,
-      petType: "bird",
-      prodType: "food",
+      petType: "Birds",
+      prodType: "Food",
       sale: true,
       prodDescription: "Food for your bird!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -32,8 +32,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Squeak Toy",
       price: 7.00,
-      petType: "dog",
-      prodType: "toy",
+      petType: "Dogs",
+      prodType: "Toy",
       sale: false,
       prodDescription: "Toy for your dog!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -41,8 +41,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Fake Mice",
       price: 5.00,
-      petType: "cat",
-      prodType: "toy",
+      petType: "Cats",
+      prodType: "Toy",
       sale: false,
       prodDescription: "Toy for your cat!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -50,8 +50,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Bird Cage",
       price: 45.00,
-      petType: "bird",
-      prodType: "habitat",
+      petType: "Birds",
+      prodType: "Habitat",
       sale: false,
       prodDescription: "Habitat for your bird!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -59,8 +59,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Dog Bed",
       price: 28.00,
-      petType: "dog",
-      prodType: "habitat",
+      petType: "Dogs",
+      prodType: "Habitat",
       sale: true,
       prodDescription: "Bed for your dog!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -68,8 +68,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Cat Scratcher",
       price: 18.00,
-      petType: "cat",
-      prodType: "habitat",
+      petType: "Cats",
+      prodType: "Habitat",
       sale: false,
       prodDescription: "Scratch post for your cat!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -77,8 +77,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Crickets x25",
       price: 5.00,
-      petType: "lizard",
-      prodType: "food",
+      petType: "Lizards",
+      prodType: "Food",
       sale: false,
       prodDescription: "Food for your lizard!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -86,8 +86,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Lizard Terrarium",
       price: 60.00,
-      petType: "lizard",
-      prodType: "habitat",
+      petType: "Lizards",
+      prodType: "Habitat",
       sale: false,
       prodDescription: "Habitat for your lizard!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -98,8 +98,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Lizard Terrarium",
       price: 60.00,
-      petType: "lizard",
-      prodType: "habitat",
+      petType: "Lizards",
+      prodType: "Habitat",
       sale: false,
       prodDescription: "Habitat for your lizard!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -107,8 +107,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Dog Bed",
       price: 28.00,
-      petType: "dog",
-      prodType: "habitat",
+      petType: "Dogs",
+      prodType: "Habitat",
       sale: true,
       prodDescription: "Bed for your dog!",
       img: "http://placehold.it/400/2d2d2d/efefef"
@@ -116,8 +116,8 @@ const accessProducts = function ( productCategory ) {
     {
       name: "Cat Food",
       price: 8.00,
-      petType: "cat",
-      prodType: "food",
+      petType: "Cats",
+      prodType: "Food",
       sale: true,
       prodDescription: "Food for your cat!",
       img: "http://placehold.it/400/2d2d2d/efefef"
