@@ -32,7 +32,16 @@ span strong {
   height: 400px
 }
 
-.signup {
-  padding: 75px 0px;
-  background: wheat;
+ul li a {
+  color: white;
+}
+
+.news-articles p {
+  font-size: 15px;
+}
+
+.news-articles a {
+  text-decoration: underline;
+  font-size: 12px;
+  color: grey;
 }
