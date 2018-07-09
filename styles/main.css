@@ -31,3 +31,17 @@ span strong {
 #carouselSlide .carousel-item {
   height: 400px
 }
+
+ul li a {
+  color: white;
+}
+
+.news-articles p {
+  font-size: 15px;
+}
+
+.news-articles a {
+  text-decoration: underline;
+  font-size: 12px;
+  color: grey;
+}

@@ -1,7 +1,8 @@
 const ejs = require('ejs')
-const accessProducts = require("./data")
+const filterProducts = require('./controllers')
+
 const addScrollOver = require("./scroll-over")
-const addNavLinks = require('./links')
+const links = require('./links')
 
 const renderProducts = function (productData) {
   productData.forEach( element => {
@@ -65,11 +66,10 @@ const renderPage = function (page) {
 
     </div>
     `
-    addNavLinks()
-    renderProducts(accessProducts("featureProducts"))
+
+    renderProducts(filterProducts(page))
     addScrollOver()
-  }
-  if (page === "Dogs" || page === "Cats" || page === "Birds" || page === "Lizards" || page === "All Products" || page === "Sale Items") {
+  } else {
     pageContents.innerHTML =
     `<div class="container">
       <div class="row">
@@ -105,8 +105,9 @@ const renderPage = function (page) {
         </div>
       </div>
     </div>`
-    addNavLinks()
-    renderProducts(accessProducts("productDataFull"))
+
+    links.addSortLinks()
+    renderProducts(filterProducts(page))
     addScrollOver()
   }
 }
