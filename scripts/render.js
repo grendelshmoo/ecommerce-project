@@ -27,6 +27,7 @@ const renderProducts = function (productData) {
   })
 }
 
+
 const renderPage = function (page) {
   const pageContents = document.querySelector(".page-contents")
   if (page === "PetsMall.com" || page === "Home") {
@@ -65,9 +66,29 @@ const renderPage = function (page) {
       </div>
 
     </div>
+
+    <div class="container-fluid bg-dark p-5" id="signup">
+      <div class="row justify-content-center text-center">
+        <h3>Sign up for our newsletter and we'll send you a 25% off coupon on your next purchase! </h3>
+      </div>
+      <form id="signup-form">
+        <div class="form-row justify-content-center mt-4">
+          <div class="col-8">
+            <input type="text" class="form-control" id="signup-email" placeholder="Enter email">
+          </div>
+          <div class="col-2">
+            <button id="signup-submit" type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+      <div class="row justify-content-around mt-5" id="alert-message">
+
+      </div>
+    </div>
     `
 
     renderProducts(filterProducts(page))
+    links.signupAlert()
     addScrollOver()
   } else {
     pageContents.innerHTML =
