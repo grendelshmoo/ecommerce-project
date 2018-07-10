@@ -125,7 +125,7 @@ const renderPage = function (page) {
           <h2>Products</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row pb-5">
         <div class="col-3 d-flex flex-column">
           <h4>Search by Category</h4>
           <hr>
