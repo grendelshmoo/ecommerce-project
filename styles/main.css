@@ -50,3 +50,8 @@ ul li a {
   transition: 1s;
   width: 50%
 }
+
+.footer-sale img {
+  max-width: 50px;
+  max-height: 50px
+}

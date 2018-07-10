@@ -9,7 +9,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Food",
       sale: true,
       prodDescription: "Food for your cat!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/catfood.jpg"
     },
     {
       name: "Dog Food",
@@ -18,7 +18,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Food",
       sale: false,
       prodDescription: "Food for your dog!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/dogfood.jpg"
     },
     {
       name: "Bird Food",
@@ -27,7 +27,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Food",
       sale: true,
       prodDescription: "Food for your bird!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/birdfood.jpg"
     },
     {
       name: "Squeak Toy",
@@ -36,7 +36,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Toy",
       sale: false,
       prodDescription: "Toy for your dog!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/squeaktoy.jpg"
     },
     {
       name: "Fake Mice",
@@ -45,7 +45,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Toy",
       sale: false,
       prodDescription: "Toy for your cat!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/fakemice.jpg"
     },
     {
       name: "Bird Cage",
@@ -54,7 +54,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Habitat",
       sale: false,
       prodDescription: "Habitat for your bird!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/birdcage.jpg"
     },
     {
       name: "Dog Bed",
@@ -63,7 +63,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Habitat",
       sale: true,
       prodDescription: "Bed for your dog!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/dogbed.jpg"
     },
     {
       name: "Cat Scratcher",
@@ -72,7 +72,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Habitat",
       sale: false,
       prodDescription: "Scratch post for your cat!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/catscratcher.jpg"
     },
     {
       name: "Crickets x25",
@@ -81,7 +81,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Food",
       sale: false,
       prodDescription: "Food for your lizard!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/crickets.jpg"
     },
     {
       name: "Lizard Terrarium",
@@ -90,7 +90,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Habitat",
       sale: false,
       prodDescription: "Habitat for your lizard!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/terrarium.jpg"
     }
   ]
 
@@ -102,7 +102,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Habitat",
       sale: false,
       prodDescription: "Habitat for your lizard!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/terrarium.jpg"
     },
     {
       name: "Dog Bed",
@@ -111,7 +111,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Habitat",
       sale: true,
       prodDescription: "Bed for your dog!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/dogbed.jpg"
     },
     {
       name: "Cat Food",
@@ -120,7 +120,7 @@ const accessProducts = function ( productCategory ) {
       prodType: "Food",
       sale: true,
       prodDescription: "Food for your cat!",
-      img: "http://placehold.it/400/2d2d2d/efefef"
+      img: "../images/birdfood.jpg"
     }
   ]
 

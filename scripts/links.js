@@ -1,4 +1,3 @@
-
 function addNavLinks() {
   const renderPage = require("./render")
   const navLinks = document.querySelectorAll("nav a")

@@ -1,10 +1,5 @@
 // Template Sources
 
-// function templateFunction () {
-// }
-// module.exports = { templateFunction }
-
-
 const successEmail = () => {
   return `<div class="alert alert-dismissible alert-success">
     <h5 class="alert-heading">Success!</h5>
@@ -21,7 +16,7 @@ const failEmail = () => {
 
 const productCards = () => {
   return `
-  <div class="col-4 flex-column p-3">
+  <div class="col-4 flex-column p-3 text-center">
     <div class="productImg">
       <img src="<%= img %>" alt="<%= prodDescription %>">
       <div class="cartLink text-light text-center text-uppercase">
@@ -38,7 +33,7 @@ const footerThumbnail = () => {
   return `
   <div class="row">
     <div class="col-3">
-      <img src="http://placehold.it/50/2d2d2d/efefef" alt="<%= prodDescription %>">
+      <img src="<%= img %>" alt="<%= prodDescription %>">
     </div>
     <div class="col-9">
       <h6><a class="text-light" href="#"><%= name %></a></h6>
@@ -142,11 +137,19 @@ const productsPage = () => {
   </div>`
 }
 
+const footerSaleHead = () => {
+  return `
+  <h5 class="text-center">ON SALE</h5>
+  <hr>
+  `
+}
+
 module.exports = {
   successEmail,
   failEmail,
   productCards,
   footerThumbnail,
   homepage,
-  productsPage
+  productsPage,
+  footerSaleHead
 }
