@@ -1,6 +1,8 @@
 function filterProducts (page) {
   const accessProducts = require('./data')
-  const productDataFull = accessProducts('productDataFull')
+  const productDataFull = accessProducts('productDataFull').sort((a,b) => {
+    return a.price - b.price
+  })
   if (page === 'Home' || page === 'PetsMall.com') {
     return accessProducts('featureProducts')
   }
