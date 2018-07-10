@@ -45,3 +45,8 @@ ul li a {
   font-size: 12px;
   color: grey;
 }
+
+.alert {
+  transition: 1s;
+  width: 50%
+}
