@@ -28,6 +28,32 @@ const renderProducts = function (productData) {
 }
 
 
+const renderFooterSale = function (productData) {
+  const footerSaleBox = document.querySelector('.footer-sale')
+  footerSaleBox.innerHTML = `
+  <h5 class="text-center">ON SALE</h5>
+  <hr>
+  `
+  productData.forEach(ele => {
+    const template = `
+    <div class="row">
+      <div class="col-3">
+        <img src="http://placehold.it/50/2d2d2d/efefef" alt="<%= prodDescription %>">
+      </div>
+      <div class="col-9">
+        <h6><a class="text-light" href="#"><%= name %></a></h6>
+        <p><strong>$<%= price %></strong></p>
+      </div>
+    </div>
+    `
+    const thumbnail = ejs.render(template, ele)
+    footerSaleBox.innerHTML += thumbnail
+
+  })
+
+}
+
+
 const renderPage = function (page) {
   const pageContents = document.querySelector(".page-contents")
   if (page === "PetsMall.com" || page === "Home") {
@@ -89,6 +115,7 @@ const renderPage = function (page) {
 
     renderProducts(filterProducts(page))
     links.signupAlert()
+    renderFooterSale(filterProducts('Sale'))
     addScrollOver()
   } else {
     pageContents.innerHTML =
@@ -129,6 +156,7 @@ const renderPage = function (page) {
 
     links.addSortLinks()
     renderProducts(filterProducts(page))
+    renderFooterSale(filterProducts('Sale'))
     addScrollOver()
   }
 }
