@@ -47,13 +47,13 @@ const homepage = () => {
   return `<div id="carouselSlide" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="https://images.unsplash.com/photo-1522438823541-d077e0a978e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9888e8cc610ebdc340f17da7f7cb87ca&auto=format&fit=crop&w=1051&q=80" alt="First slide">
+        <img class="d-block w-100" src="../images/dogs1.jpeg" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="https://images.unsplash.com/photo-1493536122405-24f67df95909?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dde8b61716b0a519b6baac0bb4a5c4b1&auto=format&fit=crop&w=1050&q=80" alt="Second slide">
+        <img class="d-block w-100" src="../images/cat1.jpeg" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-0.3.5&s=f70e2522378184a7fe8159d825fc3042&auto=format&fit=crop&w=1100&q=80" alt="Third slide">
+        <img class="d-block w-100" src="../images/dogs2.jpeg" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">
@@ -69,7 +69,7 @@ const homepage = () => {
 
     <div class="row">
       <div class="col text-center mt-3">
-        <h3>Header for Products</h3>
+        <h3>Featured Products</h3>
       </div>
     </div>
 
