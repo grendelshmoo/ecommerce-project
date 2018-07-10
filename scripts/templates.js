@@ -19,7 +19,134 @@ const failEmail = () => {
   </div>`
 }
 
+const productCards = () => {
+  return `
+  <div class="col-4 flex-column p-3">
+    <div class="productImg">
+      <img src="<%= img %>" alt="<%= prodDescription %>">
+      <div class="cartLink text-light text-center text-uppercase">
+        <a class="text-light" href="#">Add to Cart</a>
+      </div>
+    </div>
+    <h6 class="pt-2 text-uppercase"><%= name %></h6>
+    <span><%= prodDescription %><strong class="text-right">$<%= price %></strong></span>
+  </div>
+  `
+}
+
+const footerThumbnail = () => {
+  return `
+  <div class="row">
+    <div class="col-3">
+      <img src="http://placehold.it/50/2d2d2d/efefef" alt="<%= prodDescription %>">
+    </div>
+    <div class="col-9">
+      <h6><a class="text-light" href="#"><%= name %></a></h6>
+      <p><strong>$<%= price %></strong></p>
+    </div>
+  </div>
+  `
+}
+
+const homepage = () => {
+  return `<div id="carouselSlide" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1522438823541-d077e0a978e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9888e8cc610ebdc340f17da7f7cb87ca&auto=format&fit=crop&w=1051&q=80" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1493536122405-24f67df95909?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dde8b61716b0a519b6baac0bb4a5c4b1&auto=format&fit=crop&w=1050&q=80" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-0.3.5&s=f70e2522378184a7fe8159d825fc3042&auto=format&fit=crop&w=1100&q=80" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselSlide" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col text-center mt-3">
+        <h3>Header for Products</h3>
+      </div>
+    </div>
+
+    <div class="products row d-flex justify-content-around">
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid bg-dark p-5" id="signup">
+    <div class="row justify-content-center text-center">
+      <h3>Sign up for our newsletter and we'll send you a 25% off coupon on your next purchase! </h3>
+    </div>
+    <form id="signup-form">
+      <div class="form-row justify-content-center mt-4">
+        <div class="col-8">
+          <input type="text" class="form-control" id="signup-email" placeholder="Enter email">
+        </div>
+        <div class="col-2">
+          <button id="signup-submit" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+    <div class="row justify-content-around mt-5" id="alert-message">
+
+    </div>
+  </div>
+  `
+}
+
+const productsPage = () => {
+  return `<div class="container">
+    <div class="row">
+      <div class="col text-center py-3">
+        <h2>Products</h2>
+      </div>
+    </div>
+    <div class="row pb-5">
+      <div class="col-3 d-flex flex-column">
+        <h4>Search by Category</h4>
+        <hr>
+
+        <h6>Pet</h6>
+        <a class="filter" href="#">Dogs</a>
+        <a class="filter" href="#">Cats</a>
+        <a class="filter" href="#">Birds</a>
+        <a class="filter" href="#">Lizards</a>
+        <br>
+        <h6>Type</h6>
+        <a class="filter" href="#">Food</a>
+        <a class="filter" href="#">Toy</a>
+        <a class="filter" href="#">Habitat</a>
+        <br>
+        <h6>Price</h6>
+        <a class="filter" href="#">Sale</a>
+        <a class="filter" href="#">Under $10</a>
+        <a class="filter" href="#">Under $20</a>
+        <a class="filter" href="#">Under $50</a>
+        <a class="filter" href="#">Under $100</a>
+      </div>
+      <div class="products col-9 d-flex flex-row flex-wrap">
+
+      </div>
+    </div>
+  </div>`
+}
+
 module.exports = {
   successEmail,
-  failEmail
+  failEmail,
+  productCards,
+  footerThumbnail,
+  homepage,
+  productsPage
 }
